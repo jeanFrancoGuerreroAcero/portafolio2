@@ -1,0 +1,382 @@
+body{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#html{
+    scroll-behavior: smooth;
+}
+
+#encabezadoo{
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    width: 100%;
+    height: 4em;
+}
+
+#letrass{
+    display: flex;
+}
+
+#jf{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+#lArribaa{
+    background-color: #000;
+    margin-top: 1em;
+    color: #fff;
+    padding-left: 2em;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+#lArribaa:hover{
+    color: #0270fa;
+}
+
+#medio{
+    margin-top: 11em;
+    height: 32em;
+    display: flex;
+}
+
+#textosMedio{
+    display: flex;
+}
+
+#letraBlanco{
+    font-size: 3.1em;
+    color: #fff;
+    padding-right: 0.5em;
+}
+
+#letraAzul{
+    font-size: 3.1em;
+    color: #0270fa;
+}
+
+#desarrollador{
+    margin-top: -1em;
+    font-size: 2em;
+    color: #fff;
+}
+
+#textGrande{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+#cajaTamaño{
+    width: 26em;
+}
+
+#botonSobremi{
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#botonSobremi:hover{
+    background-color: #0270fa;
+    color: #fff;
+}
+
+#paraNo{
+    padding-left: 20vw;
+}
+
+#cajafoto{
+    padding-left: 15vw;
+}
+
+#imagenmia{
+    box-shadow: 0px 0px 50px #0270fa;
+    border-radius: 11em;
+    width: 22em;
+    height: 22em;
+    animation-name: foto;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes foto {
+    0%{margin-top: 0em;}
+
+    50%{margin-top: 1em;}
+
+    100%{margin-top: 0em;}
+}
+
+
+#sobreMi{
+    background-color: #0c0d12;
+    height: 35em;
+}
+
+#arriba{
+    margin-top: 1em;
+}
+
+#tituloSobre{
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: underline #0270fa;
+}
+
+#tituloizquierda{
+    font-size: 1.7em;
+    color: #0270fa;
+}
+
+#abajoizquierda{
+    font-size: 1.2em;
+    width: 30em;
+    color: #fff;
+}
+
+
+#delado{
+    display: flex;
+    justify-content: space-around;
+}
+
+#cuadro1{
+    width: 20em;
+    border-radius: 2em;
+    background-color: #000;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#azul{
+    color: #0270fa;
+}
+
+#abajoblanco{
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#cuadro2{
+    width: 20em;
+    border-radius: 2em;
+    background-color: #000;
+    text-align: center;
+}
+
+#Proyectos{
+    background-color: #000;
+    height: 33em;
+}
+
+#titupoyectos{
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: underline #0270fa;
+}
+
+#acomodoproyectos{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#imgcohete{
+    margin-left: -0.7em;
+    margin-top: -0.8em;
+    border-radius: 2em;
+    width: 23.1vw;
+    height: 13em;
+}
+
+#imgfinca{
+    margin-left: -0.7em;
+    margin-top: -0.8em;
+    border-radius: 2em;
+    width: 23.1vw;
+    height: 13em;
+}
+
+#imgpagina{
+    margin-left: -0.7em;
+    margin-top: -0.8em;
+    border-radius: 2em;
+    width: 23.1vw;
+    height: 13em;
+}
+
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+}
+
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    background: #222;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 2.6em;
+}
+
+#subir{
+    margin-top: -2em;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.back {
+    transform: rotateY( 180deg);
+}
+
+h1 {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+}
+   
+  
+p {
+    margin-bottom: 1.8em;
+}
+   
+strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+}
+   
+a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+}
+   
+a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+
+
+#habilidades{
+    background-color: #0c0d12;
+    height: 33em;
+}
+
+#arriba{
+    margin-top: 1em;
+}
+
+#titulohabilidades{
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: underline #0270fa;
+}
+
+#acomodohabilidades{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#lenguajes{
+    text-align: center;
+    width: 15em;
+    height: 20em;
+    background-color: #000;
+    border-radius: 2em;
+}
+
+#eltitulolenguaje{
+    color: #fff;
+}
+
+#logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tamañologo{
+    width: 2em;
+    height: 2em;
+}
+
+#tituloblandas{
+    color: #fff;
+}
+
+#blandas{
+    text-align: center;
+    width: 15em;
+    height: 20em;
+    background-color: #000;
+    border-radius: 2em;
+}
+
+#abajoblandas{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
