@@ -12,6 +12,9 @@ Este es mi portafolio personal, en donde presento una muestra de quien soy, mis 
 - HTML5
 - CSS
 
+## Estructura
+![Texto alternativo de la imagen](./img/estructura.png)
+
 ## Visita mi portafolio
 - [https://jeanfrancoguerreroacero.github.io/portafolio2/](https://jeanfrancoguerreroacero.github.io/portafolio2/)
 
